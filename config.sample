@@ -1,0 +1,141 @@
+{
+  "version": "0.1",
+  "es": {
+    "scheme": "https",
+    "host": "es.host",
+    "user": "es-user",
+    "password": "base64-encoded password"
+  },
+  "accounts": [
+    {
+      "name": "name of account",
+      "account": "accout id",
+      "bucket": "account-billing-bucket",
+      "prefix": "bucket-billing-prefix",
+      "index": "es-index",
+      "tenant": "es-tenant"
+    }
+  ],
+  "fields": [
+    {
+      "field": "identity/TimeInterval",
+      "type": "Interval"
+    },
+    {
+      "field": "bill/BillingPeriodStartDate",
+      "type": "DateTime"
+    },
+    {
+      "field": "bill/BillingPeriodEndDate",
+      "type": "DateTime"
+    },
+    {
+      "field": "lineItem/UsageStartDate",
+      "type": "DateTime"
+    },
+    {
+      "field": "lineItem/UsageEndDate",
+      "type": "DateTime"
+    },
+    {
+      "field": "lineItem/UsageAmount",
+      "type": "BigDecimal"
+    },
+    {
+      "field": "lineItem/NormalizationFactor",
+      "type": "OptionalBigDecimal"
+    },
+    {
+      "field": "lineItem/NormalizedUsageAmount",
+      "type": "OptionalBigDecimal"
+    },
+    {
+      "field": "lineItem/UnblendedCost",
+      "type": "BigDecimal"
+    },
+    {
+      "field": "lineItem/BlendedCost",
+      "type": "BigDecimal"
+    },
+    {
+      "field": "pricing/publicOnDemandCost",
+      "type": "BigDecimal"
+    },
+    {
+      "field": "reservation/AmortizedUpfrontCostForUsage",
+      "type": "OptionalBigDecimal"
+    },
+    {
+      "field": "reservation/AmortizedUpfrontFeeForBillingPeriod",
+      "type": "OptionalBigDecimal"
+    },
+    {
+      "field": "reservation/EffectiveCost",
+      "type": "OptionalBigDecimal"
+    },
+    {
+      "field": "reservation/EndTime",
+      "type": "OptionalString"
+    },
+    {
+      "field": "reservation/ModificationStatus",
+      "type": "OptionalString"
+    },
+    {
+      "field": "reservation/RecurringFeeForUsage",
+      "type": "OptionalBigDecimal"
+    },
+    {
+      "field": "reservation/StartTime",
+      "type": "OptionalString"
+    },
+    {
+      "field": "reservation/UnusedAmortizedUpfrontFeeForBillingPeriod",
+      "type": "OptionalBigDecimal"
+    },
+    {
+      "field": "reservation/UnusedNormalizedUnitQuantity",
+      "type": "OptionalBigDecimal"
+    },
+    {
+      "field": "reservation/UnusedQuantity",
+      "type": "OptionalBigDecimal"
+    },
+    {
+      "field": "reservation/UnusedRecurringFee",
+      "type": "OptionalBigDecimal"
+    },
+    {
+      "field": "reservation/UpfrontValue",
+      "type": "OptionalBigDecimal"
+    },
+    {
+      "field": "savingsPlan/TotalCommitmentToDate",
+      "type": "OptionalBigDecimal"
+    },
+    {
+      "field": "savingsPlan/SavingsPlanARN",
+      "type": "OptionalString"
+    },
+    {
+      "field": "savingsPlan/SavingsPlanRate",
+      "type": "OptionalBigDecimal"
+    },
+    {
+      "field": "savingsPlan/UsedCommitment",
+      "type": "OptionalBigDecimal"
+    },
+    {
+      "field": "savingsPlan/SavingsPlanEffectiveCost",
+      "type": "OptionalBigDecimal"
+    },
+    {
+      "field": "savingsPlan/AmortizedUpfrontCommitmentForBillingPeriod",
+      "type": "OptionalBigDecimal"
+    },
+    {
+      "field": "savingsPlan/RecurringCommitmentForBillingPeriod",
+      "type": "OptionalBigDecimal"
+    }
+  ]
+}
